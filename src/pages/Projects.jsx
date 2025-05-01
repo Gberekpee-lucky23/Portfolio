@@ -9,7 +9,7 @@ import atmosphereImg from "../assets/atmosphere.jpeg"
 import systemImg from "../assets/system.png"
 import researchImg from "../assets/research.jpeg"
 import restrauntImg from "../assets/restraunt.jpeg"
-import scannerImg from "../assets/scanner.png" // Fixed typo in import path
+import scannerImg from "../assets/scanner.jpeg" // Fixed typo in import path
 import webinventImg from "../assets/webinvent.jpeg"
 
 const Projects = () => {
