@@ -3,8 +3,9 @@
 import { useState, useContext, useEffect } from "react"
 import { NavLink } from "react-router-dom"
 import { motion } from "framer-motion"
-import { Sun, Moon, Menu, X } from "lucide-react"
-import ThemeContext from "../context/themecontext"
+import { Sun, Moon, Menu, X, Import } from "lucide-react"
+import ThemeContext from "../context/ThemeContext"
+
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)

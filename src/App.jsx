@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
-import Navbar from "./components/navbar"
+import Navbar from "./components/Navbar"
 import Footer from "./components/footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
