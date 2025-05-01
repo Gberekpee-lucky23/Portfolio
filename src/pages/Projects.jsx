@@ -4,6 +4,13 @@ import { useState, useContext } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ExternalLink, Github, Eye } from "lucide-react"
 import ThemeContext from "../context/ThemeContext"
+// Import images properly
+import atmosphereImg from "../assets/atmosphere.jpeg"
+import systemImg from "../assets/system.png"
+import researchImg from "../assets/research.jpeg"
+import restrauntImg from "../assets/restraunt.jpeg"
+import scannerImg from "../assets/scanner.png" // Fixed typo in import path
+import webinventImg from "../assets/webinvent.jpeg"
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext)
@@ -31,13 +38,14 @@ const Projects = () => {
     },
   }
 
+  // Fixed project data with correct image references
   const projects = [
     {
       id: 1,
       title: "A&A Mgt System",
       category: "fullstack",
       tags: ["React", "Node.js", "Appwrite"],
-      image: "/src/assets/A_A_system.png",
+      image: systemImg, // Direct reference to imported image
       description:
         "A full-stack Attendanace and Assignment Management platform with user authentication, Attendance management, and assignment processing.",
       demoLink: "#",
@@ -48,7 +56,7 @@ const Projects = () => {
       title: "Restaurant App UI Design",
       category: "design",
       tags: ["Figma", "UI/UX", "Mobile"],
-      image: "/src/assets/restraunt.jpeg",
+      image: restrauntImg, // Direct reference to imported image
       description:
         "A modern UI design for a travel booking application with a focus on user experience and accessibility.",
       demoLink: "#",
@@ -59,7 +67,7 @@ const Projects = () => {
       title: "Webinvent Limited Website",
       category: "web",
       tags: ["HTML", "CSS/JS", "PHP"],
-      image: "/src/assets/webinvent.jpeg",
+      image: webinventImg, // Direct reference to imported image
       description:
         "A responsive task management dashboard with real-time updates, drag-and-drop functionality, and team collaboration features.",
       demoLink: "https://webinvent.com.ng/",
@@ -70,7 +78,7 @@ const Projects = () => {
       title: "Research AI Design",
       category: "design",
       tags: ["Penport", "UI/UX", "Wireframing"],
-      image: "/src/assets/research_ai.jpeg",
+      image: researchImg, // Direct reference to imported image
       description:
         "A complete redesign of a finance application with improved information architecture and visual hierarchy.",
       demoLink: "#",
@@ -81,7 +89,7 @@ const Projects = () => {
       title: "Atmosphere Tech",
       category: "web",
       tags: ["HTML/CSS/JS", "Bootstrap", "PHP"],
-      image: "/src/assets/atmosphere.jpeg",
+      image: atmosphereImg, // Direct reference to imported image
       description:
         "A web application for tracking and visualizing social media analytics with interactive charts and reports.",
       demoLink: "https://atmospheretech.com.ng/",
@@ -92,9 +100,8 @@ const Projects = () => {
       title: "Web Vulnerability Scanner",
       category: "fullstack",
       tags: ["Next.js", "AppWrite", "Tailwind CSS", "React.js"],
-      image: "/src/assets/scanner.jpeg",
-      description:
-        "A full-stack application for Web Vulnerability Scanning",
+      image: scannerImg, // Direct reference to imported image
+      description: "A full-stack application for Web Vulnerability Scanning",
       demoLink: "#",
       githubLink: "https://github.com/yourusername/project",
     },
@@ -218,14 +225,16 @@ const Projects = () => {
                     >
                       <ExternalLink size={16} className="mr-1" /> Demo
                     </a>
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 flex items-center"
-                    >
-                      <Github size={16} className="mr-1" /> Code
-                    </a>
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 flex items-center"
+                      >
+                        <Github size={16} className="mr-1" /> Code
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -294,14 +303,16 @@ const Projects = () => {
                     >
                       <ExternalLink size={16} className="mr-2" /> View Demo
                     </a>
-                    <a
-                      href={activeProject.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg flex items-center transition-colors"
-                    >
-                      <Github size={16} className="mr-2" /> View Code
-                    </a>
+                    {activeProject.githubLink && (
+                      <a
+                        href={activeProject.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg flex items-center transition-colors"
+                      >
+                        <Github size={16} className="mr-2" /> View Code
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>

@@ -4,6 +4,7 @@ import { useContext } from "react"
 import { motion } from "framer-motion"
 import { Download, CheckCircle } from "lucide-react"
 import ThemeContext from "../context/ThemeContext"
+import lucky from "..assets/lucky.png"
 
 const About = () => {
   const { theme } = useContext(ThemeContext)
@@ -76,7 +77,7 @@ const About = () => {
                 <div className="absolute -top-4 -left-4 w-72 h-72 bg-indigo-300 dark:bg-indigo-700 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-70 animate-blob"></div>
                 <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-teal-300 dark:bg-teal-700 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
                 <div className="relative">
-                  <img src="/src/assets/lucky.png" alt="Profile" className="rounded-lg shadow-2xl" />
+                  <img src={lucky} alt="Profile" className="rounded-lg shadow-2xl" />
                 </div>
               </div>
             </motion.div>
