@@ -11,7 +11,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: <Github size={20} />, url: "https://github.com/Gberekpee-lucky23", label: "GitHub" },
-    { icon: <Linkedin size={20} />, url: "www.linkedin.com/in/gberekpee-lucky-1602b6248", label: "LinkedIn" },
+    { icon: <Linkedin size={20} />, url: "https://www.linkedin.com/in/gberekpee-lucky-1602b6248", label: "LinkedIn" },
     { icon: <Twitter size={20} />, url: "https://x.com/Gberekpee_lucky", label: "Twitter" },
     { icon: <Mail size={20} />, url: "mailto:gberekpeelucky@yahoo.com", label: "Email" },
   ]
