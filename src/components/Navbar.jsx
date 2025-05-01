@@ -39,7 +39,7 @@ const Navbar = () => {
               className="text-xl font-bold"
             >
               <NavLink to="/" className="text-indigo-600 dark:text-indigo-400">
-               Gberekpee Lucky
+               DevGL
               </NavLink>
             </motion.div>
           </div>

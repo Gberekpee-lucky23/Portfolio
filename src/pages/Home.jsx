@@ -51,12 +51,13 @@ const Home = () => {
   return (
     <motion.main initial="hidden" animate="visible" variants={containerVariants} className="flex-grow">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-15 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
             <motion.div variants={itemVariants} className="mb-12 lg:mb-0">
-              <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-                <span className="block">UI/UX Designer &</span>
+              <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+                <span className="block py-10">Gberekpee Lucky</span>
+                <span className="block text-indigo-500">UI/UX Designer &</span>
                 <span className="block text-indigo-600 dark:text-indigo-400">Software Developer</span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
