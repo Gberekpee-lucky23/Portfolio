@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { ArrowRight, Code, Palette, Globe } from "lucide-react"
 import ThemeContext from "../context/ThemeContext"
-import logo from './assets/logo.png'
+
 
 const Home = () => {
   const { theme } = useContext(ThemeContext)
@@ -92,7 +92,7 @@ const Home = () => {
                 <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 dark:bg-yellow-700 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
                 <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 dark:bg-pink-700 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
                 <div className="relative">
-                  <img src={logo} alt="Developer" className="rounded-lg shadow-2xl" />
+                  <img src="/assets/logo.png" alt="Developer" className="rounded-lg shadow-2xl" />
                 </div>
               </div>
             </motion.div>
