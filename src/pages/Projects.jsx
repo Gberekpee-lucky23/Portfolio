@@ -11,6 +11,7 @@ import researchImg from "../assets/research.jpeg"
 import restrauntImg from "../assets/restraunt.jpeg"
 import scannerImg from "../assets/scanner.jpeg" // Fixed typo in import path
 import webinventImg from "../assets/webinvent.jpeg"
+import DiggingImg from "../assets/digging.png"
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext)
@@ -97,6 +98,17 @@ const Projects = () => {
     },
     {
       id: 6,
+      title: "Digging Deep Engineering Marine and Logistics Services Limited",
+      category: "web",
+      tags: ["HTML/CSS/JS", "TailwindCss", "Typescript"],
+      image: DiggingImg, // Direct reference to imported image
+      description:
+        "An oil and gas application for Digging Deep engineering marine and logitics services limited. ",
+      demoLink: "https://ddemlsl.netlify.app/",
+      // githubLink: "https://github.com/yourusername/project",
+    },
+    {
+      id: 7,
       title: "Web Vulnerability Scanner",
       category: "fullstack",
       tags: ["Next.js", "AppWrite", "Tailwind CSS", "React.js"],
