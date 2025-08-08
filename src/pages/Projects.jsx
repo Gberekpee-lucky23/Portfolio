@@ -49,20 +49,20 @@ const Projects = () => {
       image: systemImg, // Direct reference to imported image
       description:
         "A full-stack Attendanace and Assignment Management platform with user authentication, Attendance management, and assignment processing.",
-      demoLink: "#",
+      demoLink: "https://aamsystem.netlify.app/",
       githubLink: "#",
     },
-    {
-      id: 2,
-      title: "Restaurant App UI Design",
-      category: "design",
-      tags: ["Figma", "UI/UX", "Mobile"],
-      image: restrauntImg, // Direct reference to imported image
-      description:
-        "A modern UI design for a travel booking application with a focus on user experience and accessibility.",
-      demoLink: "#",
-      // githubLink: "https://github.com/yourusername/project",
-    },
+    // {
+    //   id: 2,
+    //   title: "Restaurant App UI Design",
+    //   category: "design",
+    //   tags: ["Figma", "UI/UX", "Mobile"],
+    //   image: restrauntImg, // Direct reference to imported image
+    //   description:
+    //     "A modern UI design for a travel booking application with a focus on user experience and accessibility.",
+    //   demoLink: "#",
+    //   // githubLink: "https://github.com/yourusername/project",
+    // },
     {
       id: 3,
       title: "Webinvent Limited Website",
@@ -74,17 +74,17 @@ const Projects = () => {
       demoLink: "https://webinvent.com.ng/",
       // githubLink: "https://github.com/yourusername/project",
     },
-    {
-      id: 4,
-      title: "Research AI Design",
-      category: "design",
-      tags: ["Penport", "UI/UX", "Wireframing"],
-      image: researchImg, // Direct reference to imported image
-      description:
-        "A complete redesign of a finance application with improved information architecture and visual hierarchy.",
-      demoLink: "#",
-      // githubLink: "https://github.com/yourusername/project",
-    },
+    // {
+    //   id: 4,
+    //   title: "Research AI Design",
+    //   category: "design",
+    //   tags: ["Penport", "UI/UX", "Wireframing"],
+    //   image: researchImg, // Direct reference to imported image
+    //   description:
+    //     "A complete redesign of a finance application with improved information architecture and visual hierarchy.",
+    //   demoLink: "#",
+    //   // githubLink: "https://github.com/yourusername/project",
+    // },
     {
       id: 5,
       title: "Atmosphere Tech",
@@ -107,16 +107,16 @@ const Projects = () => {
       demoLink: "https://ddemlsl.netlify.app/",
       // githubLink: "https://github.com/yourusername/project",
     },
-    {
-      id: 7,
-      title: "Web Vulnerability Scanner",
-      category: "fullstack",
-      tags: ["Next.js", "AppWrite", "Tailwind CSS", "React.js"],
-      image: scannerImg, // Direct reference to imported image
-      description: "A full-stack application for Web Vulnerability Scanning",
-      demoLink: "#",
-      githubLink: "https://github.com/yourusername/project",
-    },
+    // {
+    //   id: 7,
+    //   title: "Web Vulnerability Scanner",
+    //   category: "fullstack",
+    //   tags: ["Next.js", "AppWrite", "Tailwind CSS", "React.js"],
+    //   image: scannerImg, // Direct reference to imported image
+    //   description: "A full-stack application for Web Vulnerability Scanning",
+    //   demoLink: "#",
+    //   githubLink: "https://github.com/yourusername/project",
+    // },
   ]
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
@@ -162,7 +162,7 @@ const Projects = () => {
           >
             Web Development
           </button>
-          <button
+          {/*<button
             onClick={() => setFilter("design")}
             className={`px-4 py-2 rounded-full ${
               filter === "design"
@@ -171,7 +171,7 @@ const Projects = () => {
             } transition-colors`}
           >
             UI/UX Design
-          </button>
+          </button>*/}
           <button
             onClick={() => setFilter("fullstack")}
             className={`px-4 py-2 rounded-full ${
