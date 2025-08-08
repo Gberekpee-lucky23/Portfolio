@@ -235,7 +235,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 flex items-center"
                     >
-                      <ExternalLink size={16} className="mr-1" /> Demo
+                      <ExternalLink size={16} className="mr-1" /> Visit
                     </a>
                     {project.githubLink && (
                       <a
